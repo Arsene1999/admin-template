@@ -14,7 +14,8 @@ export default function MenuItem(props: MenuItem){
         return(            
                 <div className={`
                     flex flex-col justify-center items-center
-                    h-20 w-full text-gray-600 
+                    h-20 w-full text-gray-600
+                    dark:text-gray-200
                     ${props.className}
                 `}>
                     {props.icone}
@@ -29,6 +30,7 @@ export default function MenuItem(props: MenuItem){
         <li 
             className={`
                 hover:bg-gray-100
+                dark:hover:bg-gray-800
                 cursor-pointer
             `}
             onClick={props.onCLick}
